@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Thêm nhân viên mới</h2>
+    <form action="" id="employee" method="get">
+        <label for="fname">Họ và tên</label>
+        <input required type="text" id="fname" name="fname"><br>
+        <label for="dob">Ngày sinh đầy đủ </label>
+        <input type="date" id="dob" name="dob" value=" &#128198;"><br>
+        <label for="month">tháng và năm</label>
+        <input type="month" id="dob" name="dob" value=" &#128198;"><br>
+        <label for="appt">time</label>
+        <input type="time" id="appt" name="appt"><br>
+        <div>
+            <label for="gender">Giới tính</label>
+            <input name="gender"  type="radio"> Nam
+            <input name="gender"  type="radio"> Nữ
+            <input name="gender"  type="radio"> Khác
+            </div>
+            <br>
+        <label for="email">Email</label>
+        <input required type="text" name="email" id="email"><br>  
+        <label for="password">Mật khẩu</label>
+        <input required type="password" name="password" id="password" minlength="8"><br>
+
+        <p>giới thiệu bản thân</p>
+        <textarea id="my" name="my" rows="5" cols="40" form="employee"></textarea><br>
+        <label for="city">Thành phố</label>
+        <select name="city" id="city">
+            <option value="hanoi">Hà nội</option>
+            <option value="bacninh">Bắc Ninh</option>
+            <option value="hanam">Hà Nam</option>
+        </select><br>
+        <label for="picture">Hình ảnh</label>
+        <input type="file" name="picture" id="picture" value="Choose File"><br>
+        <p>Sở thích
+            <input type="checkbox" id="hobby1" name="hobby1" value="code">
+            <label for="hobby1"> code</label>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Game">
+            <label for="hobby2"> Chơi game</label>
+            <input type="checkbox" id="hobby3" name="hobby3" value="swin">
+            <label for="hobby3"> bơi lội</label>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Football">
+            <label for="hobby4"> đá bóng</label>
+        </p>
+            <label for="process">Tiến độ công việc</label>
+            <input type="range" name="process" id="process"><br>
+            <label for="year">Năm kinh nghiệm</label>
+            <input type="number" name="year" id="year" min="1" max="10" ><br>
+            <label for="search">Tìm kiếm</label>
+            <input type="search" name="search" id="search"><br>
+            <label for="color">Màu sắc</label>
+            <input type="color" name="color" id="color" value=""><br>
+            <input type="submit" name="search3" id="search3" value="Hủy">
+            <input type="submit" name="search1" id="search1" value="làm mới">
+            <input type="submit" name="search4" id="search4" value="Gửi"><br>
+    </form>
+</body>
+</html>
